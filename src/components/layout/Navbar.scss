@@ -1,0 +1,170 @@
+.Navbar {
+  flex: 0 0 70px;
+  background-color: #0081f8;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12%;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+
+  .center {
+    position: relative;
+    width: 200px;
+    min-width: 150px;
+    margin: 0 5px;
+    & .center-logo {
+      position: absolute;
+      width: 100%;
+      top: 5px;
+      // left: -16px;
+      z-index: 100;
+      cursor: pointer;
+    }
+  }
+
+  .left,
+  .right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+
+    .nav {
+      margin: 0 15px;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 16px;
+      cursor: pointer;
+
+      &:hover {
+        color: #a7ff4f;
+      }
+    }
+  }
+
+  .hamburger {
+    position: absolute;
+    top: 26px;
+    right: 26px;
+    cursor: pointer;
+    transition-duration: 0;
+    transform: translateX(65px);
+
+    & svg {
+      transform: rotate(0deg);
+      transition: transform 0.3s ease;
+    }
+    &:hover {
+      svg {
+        transform: rotate(180deg);
+        transition: transform 0.3s ease;
+
+        & line {
+            stroke: #a7ff4f;
+        }
+      }
+    }
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    background-color: #0081f8;
+    color: white;
+    width: auto;
+    text-align: end;
+    padding: 15px 20px;
+    border-radius: 0 0 0 15px;
+
+    .nav {
+      padding: 5px 6px;
+      cursor: pointer;
+      font-weight: 700;
+
+      &:hover {
+        color: #a7ff4f;
+      }
+    }
+  }
+
+  #menu {
+    transition: 0.15s ease-out;
+  }
+}
+
+.mobile-menu.hide {
+  right: -260px;
+  opacity: 0;
+  transform: translateX(0%);
+}
+
+@media screen and (max-width: 1275px) {
+  .Navbar {
+    padding: 0 3%;
+  }
+}
+
+@media screen and (max-width: 1035px) {
+  .Navbar {
+    .left,
+    .right {
+      .nav {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .Navbar {
+    .left,
+    .right {
+      .nav {
+        display: none;
+      }
+    }
+    .hamburger {
+      transform: translateX(0);
+      transition: transform 0.2s ease-out;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Navbar {
+    .center {
+      width: 41%;
+      min-width: 120px;
+      .center-logo {
+        position: fixed;
+        width: 20%;
+        min-width: 150px;
+        left: 26px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .Navbar {
+    .center {
+      .center-logo {
+        position: fixed;
+        width: 50%;
+        left: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 950.1px) {
+  .hamburger {
+    display: none;
+  }
+
+  .mobile-menu {
+    right: -260px !important;
+  }
+}
