@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/bffl/static/css/main.06791abd.css",
+    "main.js": "/bffl/static/js/main.34f36203.js",
+    "static/js/787.3df34186.chunk.js": "/bffl/static/js/787.3df34186.chunk.js",
+    "static/media/phones-img.png": "/bffl/static/media/phones-img.4affbc26c94effe1dcd9.png",
+    "index.html": "/bffl/index.html",
+    "main.06791abd.css.map": "/bffl/static/css/main.06791abd.css.map",
+    "main.34f36203.js.map": "/bffl/static/js/main.34f36203.js.map",
+    "787.3df34186.chunk.js.map": "/bffl/static/js/787.3df34186.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06791abd.css",
+    "static/js/main.34f36203.js"
+  ]
+}
