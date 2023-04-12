@@ -38,9 +38,10 @@ section {
   &.black {
     border-color: black;
     color: black;
+    padding: 22px 40px;
 
     &:hover {
-      background-color: black;
+      background-color: rgb(71, 71, 71);
       color: white;
     }
   }
@@ -62,6 +63,21 @@ section {
     background-color: #1b8efa;
     transform: translate(2px, 2px);
     box-shadow: 4px 4px 0px #a7ff4f;
+  }
+}
+
+.solid-btn {
+  background-color: black;
+  border: solid 2px black;
+  color: white;
+  padding: 22px 40px;
+  border-radius: 100px;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(71, 71, 71);
   }
 }
 
@@ -197,7 +213,17 @@ section {
         font-weight: 400;
         line-height: 133%;
         color: white;
-        padding-right: 15%;
+        margin-bottom: 36px;
+      }
+
+      .button-div {
+        display: flex;
+        flex-direction: column;
+        button {
+          width: 320px;
+          text-align: center;
+          margin-bottom: 18px;
+        }
       }
     }
 
@@ -207,6 +233,70 @@ section {
       img {
         width: 100%;
         max-width: 800px;
+      }
+    }
+  }
+}
+
+.footer {
+  padding: 55px 8%;
+  background-color: #0081f8;
+
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .left {
+      display: flex;
+      .logo-div {
+        cursor: pointer;
+        img {
+          width: 120px;
+        }
+      }
+      .vr {
+        border-right: solid 1px white;
+        margin: 0 20px 0 25px;
+      }
+      .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        a {
+          margin-bottom: 5px;
+          color: white;
+          font-weight: 700;
+          font-size: 12px;
+          cursor: pointer;
+
+          &:hover {
+            color: rgba(255, 255, 255, 0.826);
+          }
+        }
+      }
+    }
+    .right {
+      .socials {
+        display: flex;
+        align-items: center;
+        .svg-div {
+          cursor: pointer;
+          svg {
+            margin: 0 15px;
+            path {
+              fill: rgba(255, 255, 255, 0.647);
+            }
+
+            &:hover {
+              path {
+                fill: rgb(255, 255, 255);
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -314,6 +404,10 @@ section {
   section {
     scroll-margin-top: 160px;
     padding-bottom: 120px;
+  }
+
+  .solid-btn {
+    font-size: 20px;
   }
 
   .hero {
@@ -676,9 +770,10 @@ section {
   .how-it-works,
   .mission,
   .talent,
-  .hello {
-    padding-left: 12%;
-    padding-right: 12%;
+  .hello,
+  .footer {
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 
@@ -686,9 +781,10 @@ section {
   .how-it-works,
   .mission,
   .talent,
-  .hello {
-    padding-left: 15%;
-    padding-right: 15%;
+  .hello,
+  .footer {
+    padding-left: 12%;
+    padding-right: 12%;
   }
 }
 
@@ -696,8 +792,9 @@ section {
   .how-it-works,
   .mission,
   .talent,
-  .hello {
-    padding-left: 20%;
-    padding-right: 20%;
+  .hello,
+  .footer {
+    padding-left: 15%;
+    padding-right: 15%;
   }
 }

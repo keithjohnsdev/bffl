@@ -168,3 +168,21 @@
     right: -260px !important;
   }
 }
+
+@media screen and (min-width: 1700px) {
+  .Navbar {
+    padding: 0 15%;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .Navbar {
+    padding: 0 18%;
+  }
+}
+
+@media screen and (min-width: 2200px) {
+  .Navbar {
+    padding: 0 20%;
+  }
+}
