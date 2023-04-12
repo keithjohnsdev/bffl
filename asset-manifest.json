@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/bffl/static/css/main.fb7c3ed2.css",
-    "main.js": "/bffl/static/js/main.b46e4e19.js",
+    "main.css": "/bffl/static/css/main.b527465f.css",
+    "main.js": "/bffl/static/js/main.e1ef91d8.js",
     "static/js/787.3df34186.chunk.js": "/bffl/static/js/787.3df34186.chunk.js",
     "static/media/mission-dog-img.png": "/bffl/static/media/mission-dog-img.d67f38ec9423022f9d5d.png",
     "static/media/phones-img.png": "/bffl/static/media/phones-img.4affbc26c94effe1dcd9.png",
     "index.html": "/bffl/index.html",
-    "main.fb7c3ed2.css.map": "/bffl/static/css/main.fb7c3ed2.css.map",
-    "main.b46e4e19.js.map": "/bffl/static/js/main.b46e4e19.js.map",
+    "main.b527465f.css.map": "/bffl/static/css/main.b527465f.css.map",
+    "main.e1ef91d8.js.map": "/bffl/static/js/main.e1ef91d8.js.map",
     "787.3df34186.chunk.js.map": "/bffl/static/js/787.3df34186.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb7c3ed2.css",
-    "static/js/main.b46e4e19.js"
+    "static/css/main.b527465f.css",
+    "static/js/main.e1ef91d8.js"
   ]
 }
