@@ -9,6 +9,8 @@ function App() {
   const howItWorks = useRef(null);
   const top = useRef(null);
   const talent = useRef(null);
+  const mission = useRef(null);
+  const hello = useRef(null);
 
   useEffect(() => {
     if (width < 601) {
@@ -20,7 +22,13 @@ function App() {
 
   return (
     <div className="App" ref={top}>
-      <Navbar top={top} howItWorks={howItWorks} talent={talent} />
+      <Navbar
+        top={top}
+        howItWorks={howItWorks}
+        talent={talent}
+        mission={mission}
+        hello={hello}
+      />
       <section className="hero">
         <h3 className="section-title">Invite-Only Platform Connecting</h3>
         {isMobile ? (
@@ -68,7 +76,10 @@ function App() {
             </div>
           </div>
           <div className="img-content">
-            <img src={require("./assets/phones-img.png")} alt="phones showing the BFFL app"/>
+            <img
+              src={require("./assets/phones-img.png")}
+              alt="phones showing the BFFL app"
+            />
           </div>
         </div>
       </section>
@@ -86,6 +97,40 @@ function App() {
             textLine2="ARE THE BEST!"
           ></SectionHeader>
         )}
+      </section>
+      <SectionDivider title="OUR MISSION" />
+      <section className="mission" ref={mission}>
+        <div className="mission-content">
+          <div className="mission-text">
+            <h4 className="text-title">LIKES & TREATS</h4>
+            <p className="text-copy">
+              BFFL creates opportunities for content creators and their beloved
+              best friends to connect with their community while earning income.
+            </p>
+            <button className="blue-outline-btn">JOIN AS A CREATOR</button>
+          </div>
+          <div className="mission-img">
+            <img
+              src={require("./assets/mission-dog-img.png")}
+              alt="brown and white dog on a couch looking at the camera"
+            />
+          </div>
+        </div>
+      </section>
+      <section className="hello" ref={hello}>
+        <div className="hello-content">
+          <div className="hello-text">
+            <h4 className="title">SAY HELLO!</h4>
+            <p className="copy">
+              Get in touch with us - we're all ears (and paws)!
+            </p>
+            <button className="blue-outline-btn black">JOIN AS A BRAND</button>
+            <button className="solid-btn">JOIN AS A CREATOR</button>
+          </div>
+          <div className="hello-img">
+            <img />
+          </div>
+        </div>
       </section>
     </div>
   );

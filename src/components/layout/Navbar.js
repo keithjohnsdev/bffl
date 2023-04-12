@@ -6,6 +6,7 @@ export const Navbar = (props) => {
   const howItWorks = props.howItWorks;
   const talent = props.talent;
   const top = props.top;
+  const mission = props.mission;
   const [showMenu, setShowMenu] = useState(false);
 
   function hamburgerToggle() {
@@ -18,7 +19,7 @@ export const Navbar = (props) => {
         <p
           className="nav"
           onClick={() =>
-            business.current?.scrollIntoView({ behavior: "smooth" })
+            top.current?.scrollIntoView({ behavior: "smooth" })
           }
         >
           FOR BUSINESS
@@ -26,7 +27,7 @@ export const Navbar = (props) => {
         <p
           className="nav"
           onClick={() =>
-            business.current?.scrollIntoView({ behavior: "smooth" })
+            top.current?.scrollIntoView({ behavior: "smooth" })
           }
         >
           FOR CREATORS
@@ -62,7 +63,7 @@ export const Navbar = (props) => {
         <p
           className="nav"
           onClick={() =>
-            business.current?.scrollIntoView({ behavior: "smooth" })
+            mission.current?.scrollIntoView({ behavior: "smooth" })
           }
         >
           OUR MISSION
@@ -70,7 +71,7 @@ export const Navbar = (props) => {
         <p
           className="nav"
           onClick={() =>
-            business.current?.scrollIntoView({ behavior: "smooth" })
+            mission.current?.scrollIntoView({ behavior: "smooth" })
           }
         >
           LOGIN
@@ -114,7 +115,7 @@ export const Navbar = (props) => {
         <p
           className="nav"
           onClick={() =>
-            business.current?.scrollIntoView({ behavior: "smooth" })
+            top.current?.scrollIntoView({ behavior: "smooth" })
           }
         >
           FOR BUSINESS
@@ -122,7 +123,7 @@ export const Navbar = (props) => {
         <p
           className="nav"
           onClick={() =>
-            business.current?.scrollIntoView({ behavior: "smooth" })
+            top.current?.scrollIntoView({ behavior: "smooth" })
           }
         >
           FOR CREATORS
@@ -130,7 +131,7 @@ export const Navbar = (props) => {
         <p
           className="nav"
           onClick={() =>
-            business.current?.scrollIntoView({ behavior: "smooth" })
+            howItWorks.current?.scrollIntoView({ behavior: "smooth" })
           }
         >
           HOW IT WORKS
@@ -138,7 +139,7 @@ export const Navbar = (props) => {
         <p
           className="nav"
           onClick={() =>
-            business.current?.scrollIntoView({ behavior: "smooth" })
+            talent.current?.scrollIntoView({ behavior: "smooth" })
           }
         >
           MEET THE TALENT
@@ -146,7 +147,7 @@ export const Navbar = (props) => {
         <p
           className="nav"
           onClick={() =>
-            business.current?.scrollIntoView({ behavior: "smooth" })
+            mission.current?.scrollIntoView({ behavior: "smooth" })
           }
         >
           OUR MISSION
