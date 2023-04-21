@@ -1,17 +1,26 @@
 {
   "files": {
-    "main.css": "/bffl/static/css/main.b527465f.css",
-    "main.js": "/bffl/static/js/main.e1ef91d8.js",
+    "main.css": "/bffl/static/css/main.10df1f40.css",
+    "main.js": "/bffl/static/js/main.d890772c.js",
     "static/js/787.3df34186.chunk.js": "/bffl/static/js/787.3df34186.chunk.js",
+    "static/media/grid-img8.png": "/bffl/static/media/grid-img8.d6fdbc62a02ff9a7b3ef.png",
+    "static/media/grid-img9.png": "/bffl/static/media/grid-img9.dbc1a1c8f848e9e98cbd.png",
     "static/media/mission-dog-img.png": "/bffl/static/media/mission-dog-img.d67f38ec9423022f9d5d.png",
+    "static/media/grid-img1.png": "/bffl/static/media/grid-img1.22c078203da5092cb19b.png",
+    "static/media/grid-img2.png": "/bffl/static/media/grid-img2.b20a6b550e5222347e3b.png",
+    "static/media/grid-img6.png": "/bffl/static/media/grid-img6.826ad2a6bcf5d8f4dbc5.png",
+    "static/media/grid-img7.png": "/bffl/static/media/grid-img7.27fda6c1a8baddda6f7b.png",
+    "static/media/grid-img4.png": "/bffl/static/media/grid-img4.4759285553aba57546b4.png",
+    "static/media/grid-img3.png": "/bffl/static/media/grid-img3.97503421b7df0427de1d.png",
+    "static/media/grid-img5.png": "/bffl/static/media/grid-img5.293ff083484bca5a1e20.png",
     "static/media/phones-img.png": "/bffl/static/media/phones-img.4affbc26c94effe1dcd9.png",
     "index.html": "/bffl/index.html",
-    "main.b527465f.css.map": "/bffl/static/css/main.b527465f.css.map",
-    "main.e1ef91d8.js.map": "/bffl/static/js/main.e1ef91d8.js.map",
+    "main.10df1f40.css.map": "/bffl/static/css/main.10df1f40.css.map",
+    "main.d890772c.js.map": "/bffl/static/js/main.d890772c.js.map",
     "787.3df34186.chunk.js.map": "/bffl/static/js/787.3df34186.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b527465f.css",
-    "static/js/main.e1ef91d8.js"
+    "static/css/main.10df1f40.css",
+    "static/js/main.d890772c.js"
   ]
 }
