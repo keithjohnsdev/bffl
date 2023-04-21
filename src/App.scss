@@ -144,10 +144,41 @@ section {
 .talent {
   text-align: center;
   padding-top: 169px;
-  margin: 0 8%;
+  margin: 0 2.75%;
 
   .section-header {
     font-size: 80px;
+  }
+
+  .grid-container {
+    margin-top: 60px;
+    img {
+      border-radius: 30px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 35px;
+
+      &.row1 {
+        img {
+          width: 32%;
+        }
+      }
+
+      &.row2 {
+        img {
+          width: 23.5%;
+        }
+      }
+
+      &.row3 {
+        img {
+          width: 49%;
+        }
+      }
+    }
   }
 }
 
@@ -284,8 +315,9 @@ section {
         align-items: center;
         .svg-div {
           cursor: pointer;
+          padding: 5px;
           svg {
-            margin: 0 15px;
+            margin: 0 10px;
             path {
               fill: rgba(255, 255, 255, 0.647);
             }
@@ -453,6 +485,12 @@ section {
     .section-header {
       font-size: 70px;
     }
+
+    .grid-container {
+      .row {
+        margin-bottom: 20px;
+      }
+    }
   }
 
   .mission {
@@ -481,10 +519,14 @@ section {
 
 @media screen and (max-width: 768px) {
   .talent {
-    padding-top: 140px;
+    padding-top: 120px;
 
     .section-header {
       font-size: 60px;
+    }
+
+    .grid-container {
+      margin-top: 30px;
     }
   }
 }
@@ -571,6 +613,20 @@ section {
       font-size: 55px;
     }
   }
+
+  .footer {
+    .footer-content {
+      .right {
+        .socials {
+          .svg-div {
+            svg {
+              margin: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -621,10 +677,54 @@ section {
   }
 
   .talent {
-    padding-top: 110px;
+    padding-top: 100px;
+    margin: 0;
 
     .section-header {
       font-size: 60px;
+    }
+
+    .grid-container {
+      img {
+        border-radius: 0;
+      }
+
+      .row {
+        margin-bottom: 0px;
+
+        &.row1,
+        &.row2,
+        &.row3,
+        &.row4 {
+          img {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    .footer-content {
+      flex-direction: column;
+      .top {
+        display: flex;
+        justify-content: space-between;
+      }
+      .right {
+        .links {
+          display: flex;
+          flex-direction: column;
+
+          .socials {
+            .svg-div {
+              svg {
+                margin: 0px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -41,7 +41,6 @@ export const Navbar = (props) => {
           HOW IT WORKS
         </p>
       </div>
-      <div className="center">
         <img
           className="center-logo"
           src={require("../../assets/logo-bffl-tag.png")}
@@ -50,7 +49,7 @@ export const Navbar = (props) => {
             top.current?.scrollIntoView({ behavior: "smooth" })
           }
         />
-      </div>
+        <div className="center"></div>
       <div className="right">
         <p
           className="nav"
