@@ -13,7 +13,7 @@ section {
 
 .section-title {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 36px;
   margin-bottom: 30px;
 }
 
@@ -91,7 +91,7 @@ section {
     font-weight: 400;
     font-style: italic;
     font-size: 24px;
-    margin-top: 62px;
+    margin-top: 28px;
   }
 
   .hero-buttons {
@@ -709,17 +709,49 @@ section {
       flex-direction: column;
       .top {
         display: flex;
-        justify-content: space-between;
-      }
-      .right {
-        .links {
-          display: flex;
-          flex-direction: column;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 0 10%;
 
-          .socials {
-            .svg-div {
-              svg {
-                margin: 0px;
+        .right {
+          .links {
+            display: flex;
+            flex-direction: column;
+            a {
+              margin-bottom: 5px;
+              color: white;
+              font-weight: 700;
+              font-size: 12px;
+              cursor: pointer;
+
+              &:hover {
+                color: rgba(255, 255, 255, 0.826);
+              }
+            }
+          }
+        }
+      }
+      .bottom {
+        margin-top: 10px;
+        .socials {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .svg-div {
+            cursor: pointer;
+            padding: 5px;
+            svg {
+              margin: 0 2px;
+              path {
+                fill: rgba(255, 255, 255, 0.647);
+              }
+  
+              &:hover {
+                path {
+                  fill: rgb(255, 255, 255);
+                }
               }
             }
           }
@@ -808,6 +840,14 @@ section {
       .mission-img {
         padding: 60px 0 0;
         width: 85%;
+      }
+    }
+  }
+
+  .footer {
+    .footer-content {
+      .top {
+        padding: 0;
       }
     }
   }
