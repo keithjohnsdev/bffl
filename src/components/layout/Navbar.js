@@ -1,5 +1,6 @@
 import "./Navbar.scss";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const Navbar = (props) => {
   const business = props.business;
@@ -8,6 +9,7 @@ export const Navbar = (props) => {
   const top = props.top;
   const mission = props.mission;
   const [showMenu, setShowMenu] = useState(false);
+  const navigate = useNavigate();
 
   function hamburgerToggle() {
     setShowMenu(!showMenu);
@@ -18,9 +20,7 @@ export const Navbar = (props) => {
       <div className="left">
         <p
           className="nav"
-          onClick={() =>
-            top.current?.scrollIntoView({ behavior: "smooth" })
-          }
+          onClick={()=>{navigate("/contact-brands")}}
         >
           FOR BUSINESS
         </p>

@@ -2,6 +2,7 @@ import "./App.scss";
 import { Navbar, SectionHeader, SectionDivider, Footer } from "./components";
 import { useRef, useState, useEffect } from "react";
 import { useViewport } from "./components/hooks/useViewport";
+import { useNavigate } from "react-router-dom";
 
 function App() {
   const { width } = useViewport();
@@ -11,6 +12,8 @@ function App() {
   const talent = useRef(null);
   const mission = useRef(null);
   const hello = useRef(null);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (width < 601) {
@@ -45,7 +48,7 @@ function App() {
         )}
         <p className="italic">Social Collaboration Made Easy!</p>
         <div className="hero-buttons">
-          <button className="blue-outline-btn">JOIN AS A BRAND</button>
+          <button className="blue-outline-btn" onClick={()=>{navigate("/contact-brands")}}>JOIN AS A BRAND</button>
           <button className="blue-green-btn">JOIN AS A CREATOR</button>
         </div>
       </section>

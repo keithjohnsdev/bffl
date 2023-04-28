@@ -7,6 +7,22 @@
         text-align: center;
         font-size: 40px;
     }
+
+    .form-row {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        .input-wrapper {
+            width: 31.5%;
+
+            input {
+                background-color: #0000000D;
+                padding: 16px 20px;
+                border-radius: 10px;
+            }
+        }
+    }
 }
 
 .footer {
