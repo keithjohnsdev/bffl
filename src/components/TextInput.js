@@ -1,10 +1,10 @@
 import "./TextInput.scss";
 
-export const TextInput = ({placeholder, value, name, label}) => {
+export const TextInput = ({ classes, label, type, placeholder, value, name, onChange}) => {
   return (
-    <div className="input-wrapper">
+    <div className={`input-wrapper ${classes}`}>
         <label>{label}</label>
-        <input type="text" placeholder={placeholder} value={value} name={name}/>
+        <input type={type} placeholder={placeholder} value={value} name={name} onChange={onChange}/>
     </div>
   )
 }

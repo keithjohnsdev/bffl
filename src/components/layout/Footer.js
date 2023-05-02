@@ -1,4 +1,4 @@
-import "../../App.scss"
+import "../../App.scss";
 import { useState, useEffect } from "react";
 import { useViewport } from "../../components/hooks/useViewport";
 
@@ -42,8 +42,24 @@ export const Footer = (props) => {
               >
                 HELLO@BFFL.IO
               </a>
-              <a>PRIVACY POLICY</a>
-              <a>TERMS OF SERVICE</a>
+              <a
+                href={() =>
+                  window.open(
+                    "mailto:email@example.com?subject=Subject&body=Body%20goes%20here"
+                  )
+                }
+              >
+                PRIVACY POLICY
+              </a>
+              <a
+                href={() =>
+                  window.open(
+                    "mailto:email@example.com?subject=Subject&body=Body%20goes%20here"
+                  )
+                }
+              >
+                TERMS OF SERVICE
+              </a>
             </div>
           </div>
           <div className="right">
@@ -156,8 +172,24 @@ export const Footer = (props) => {
                 >
                   HELLO@BFFL.IO
                 </a>
-                <a>PRIVACY POLICY</a>
-                <a>TERMS OF SERVICE</a>
+                <a
+                  href={() =>
+                    window.open(
+                      "mailto:email@example.com?subject=Subject&body=Body%20goes%20here"
+                    )
+                  }
+                >
+                  PRIVACY POLICY
+                </a>
+                <a
+                  href={() =>
+                    window.open(
+                      "mailto:email@example.com?subject=Subject&body=Body%20goes%20here"
+                    )
+                  }
+                >
+                  TERMS OF SERVICE
+                </a>
               </div>
             </div>
           </div>

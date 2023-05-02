@@ -221,7 +221,7 @@ function App() {
               Get in touch with us - <br /> we're all ears (and paws)!
             </p>
             <div className="button-div">
-              <button className="blue-outline-btn black">
+              <button className="blue-outline-btn black" onClick={()=>{navigate("/contact-brands")}}>
                 JOIN AS A BRAND
               </button>
               <button className="solid-btn">JOIN AS A CREATOR</button>
