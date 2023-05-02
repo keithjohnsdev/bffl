@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bffl/static/css/main.a209e63d.css",
-    "main.js": "/bffl/static/js/main.587dacb4.js",
+    "main.css": "/bffl/static/css/main.5b10127c.css",
+    "main.js": "/bffl/static/js/main.2072534a.js",
     "static/js/787.3df34186.chunk.js": "/bffl/static/js/787.3df34186.chunk.js",
     "static/media/grid-img8.png": "/bffl/static/media/grid-img8.d6fdbc62a02ff9a7b3ef.png",
     "static/media/grid-img9.png": "/bffl/static/media/grid-img9.dbc1a1c8f848e9e98cbd.png",
@@ -15,12 +15,12 @@
     "static/media/grid-img5.png": "/bffl/static/media/grid-img5.293ff083484bca5a1e20.png",
     "static/media/phones-img.png": "/bffl/static/media/phones-img.4affbc26c94effe1dcd9.png",
     "index.html": "/bffl/index.html",
-    "main.a209e63d.css.map": "/bffl/static/css/main.a209e63d.css.map",
-    "main.587dacb4.js.map": "/bffl/static/js/main.587dacb4.js.map",
+    "main.5b10127c.css.map": "/bffl/static/css/main.5b10127c.css.map",
+    "main.2072534a.js.map": "/bffl/static/js/main.2072534a.js.map",
     "787.3df34186.chunk.js.map": "/bffl/static/js/787.3df34186.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a209e63d.css",
-    "static/js/main.587dacb4.js"
+    "static/css/main.5b10127c.css",
+    "static/js/main.2072534a.js"
   ]
 }
