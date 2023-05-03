@@ -227,9 +227,6 @@ function App() {
               <button className="solid-btn">JOIN AS A CREATOR</button>
             </div>
           </div>
-          <div className="hello-img">
-            <img />
-          </div>
         </div>
       </section>
       <Footer top={top}/>

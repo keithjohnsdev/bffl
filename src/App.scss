@@ -219,7 +219,17 @@ section {
 }
 
 .hello {
-  background: linear-gradient(90deg, #ff6f32 51.18%, #f24922);
+  background-image: linear-gradient(
+      to right,
+      #ff6f32 50%,
+      #ea7033 64%,
+      transparent 70.1%
+    ),
+    url("./assets/hello-dog.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  // background: linear-gradient(90deg, #ff6f32 51.18%, #f24922);
   padding: 140px 8%;
 
   .hello-content {
@@ -254,16 +264,8 @@ section {
           width: 320px;
           text-align: center;
           margin-bottom: 18px;
+          margin-right: 0px;
         }
-      }
-    }
-
-    .hello-img {
-      width: 50%;
-
-      img {
-        width: 100%;
-        max-width: 800px;
       }
     }
   }
@@ -335,6 +337,17 @@ section {
 }
 
 //-- Media Queries --//
+@media screen and (max-width: 1450px) {
+  .hello {
+    background-image: linear-gradient(
+        to right,
+        #ff6f32 45%,
+        #ea7033 59%,
+        transparent 65.1%
+      ),
+      url("./assets/hello-dog.png");
+  }
+}
 
 @media screen and (max-width: 1390px) {
   .how-it-works {
@@ -363,6 +376,18 @@ section {
   }
 }
 
+@media screen and (max-width: 1300px) {
+  .hello {
+    background-image: linear-gradient(
+        to right,
+        #ff6f32 40%,
+        #ea7033 55%,
+        transparent 60%
+      ),
+      url("./assets/hello-dog.png");
+  }
+}
+
 @media screen and (max-width: 1170px) {
   .how-it-works {
     .content {
@@ -384,6 +409,43 @@ section {
         img {
           width: 100%;
           max-width: 600px;
+        }
+      }
+    }
+  }
+
+  .hello {
+    background-image: linear-gradient(
+        to right,
+        #ff6f32 35%,
+        #ea7033 50%,
+        transparent 55%
+      ),
+      url("./assets/hello-dog.png");
+
+    .hello-content {
+      display: flex;
+      flex-direction: row;
+
+      .hello-text {
+        width: 50%;
+
+        .title {
+          font-size: 70px;
+          margin-bottom: 17px;
+        }
+
+        .copy {
+          font-size: 28px;
+          margin-bottom: 36px;
+        }
+
+        .button-div {
+          button {
+            width: 300px;
+            font-size: 20px;
+            margin-bottom: 18px;
+          }
         }
       }
     }
@@ -411,6 +473,39 @@ section {
         img {
           width: 100%;
           max-width: 600px;
+        }
+      }
+    }
+  }
+
+  .hello {
+    background-image: linear-gradient(
+        to right,
+        #ff6f32 40%,
+        #ea7033 55%,
+        transparent 60%
+      ),
+      url("./assets/hello-dog.png");
+    background-position: 115%;
+
+    .hello-content {
+      .hello-text {
+        .title {
+          font-size: 48px;
+          margin-bottom: 17px;
+        }
+
+        .copy {
+          font-size: 20px;
+          margin-bottom: 36px;
+        }
+
+        .button-div {
+          button {
+            width: 280px;
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
         }
       }
     }
@@ -515,6 +610,74 @@ section {
       }
     }
   }
+
+  .hello {
+    background-image: linear-gradient(
+        to right,
+        #ff6f32 40%,
+        #ea7033 55%,
+        transparent 60%
+      ),
+      url("./assets/hello-dog.png");
+    background-position: 115%;
+
+    .hello-content {
+      .hello-text {
+        .title {
+          font-size: 48px;
+          margin-bottom: 17px;
+        }
+
+        .copy {
+          font-size: 20px;
+          margin-bottom: 36px;
+        }
+
+        .button-div {
+          button {
+            width: 280px;
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .hello {
+    background-image: linear-gradient(
+        to right,
+        #ff6f32 31%,
+        #ea7033 46%,
+        transparent 51%
+      ),
+      url("./assets/hello-dog.png");
+    background-position: 115%;
+
+    .hello-content {
+      .hello-text {
+        .title {
+          font-size: 48px;
+          margin-bottom: 17px;
+        }
+
+        .copy {
+          font-size: 20px;
+          margin-bottom: 36px;
+        }
+
+        .button-div {
+          button {
+            width: 280px;
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -527,6 +690,49 @@ section {
 
     .grid-container {
       margin-top: 30px;
+    }
+  }
+
+  .hello {
+    padding: 60px 0 300px;
+    background-image: linear-gradient(
+        to bottom,
+        #ff6f32 37.5%,
+        #ea7033 52.5%,
+        transparent 57.5%
+      ),
+      url("./assets/hello-dog-mobile.png");
+    background-position: bottom;
+    background-size: contain;
+
+    .hello-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      .hello-text {
+        width: 100%;
+        text-align: center;
+
+        .title {
+          font-size: 54px;
+          margin-bottom: 17px;
+        }
+
+        .copy {
+          font-size: 20px;
+          margin-bottom: 24px;
+        }
+
+        .button-div {
+          align-items: center;
+          button {
+            width: 240px;
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+        }
+      }
     }
   }
 }
@@ -747,7 +953,7 @@ section {
               path {
                 fill: rgba(255, 255, 255, 0.647);
               }
-  
+
               &:hover {
                 path {
                   fill: rgb(255, 255, 255);
@@ -758,6 +964,53 @@ section {
         }
       }
     }
+  }
+
+  .hello {
+    padding: 60px 0 240px;
+    background-image: linear-gradient(
+        to bottom,
+        #ff6f32 37.5%,
+        #ea7033 52.5%,
+        transparent 57.5%
+      ),
+      url("./assets/hello-dog-mobile.png");
+
+    .hello-content {
+      .hello-text {
+        .title {
+          font-size: 44px;
+          margin-bottom: 14px;
+        }
+
+        .copy {
+          font-size: 16px;
+          margin-bottom: 22px;
+        }
+
+        .button-div {
+          button {
+            width: 240px;
+            font-size: 14px;
+            margin-bottom: 10px;
+            padding: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .hello {
+    padding: 60px 0 210px;
+    background-image: linear-gradient(
+        to bottom,
+        #ff6f32 37.5%,
+        #ea7033 52.5%,
+        transparent 57.5%
+      ),
+      url("./assets/hello-dog-mobile.png");
   }
 }
 
@@ -844,10 +1097,80 @@ section {
     }
   }
 
+  .hello {
+    padding: 60px 0 210px;
+    background-image: linear-gradient(
+        to bottom,
+        #ff6f32 42%,
+        #ea7033 57%,
+        transparent 62%
+      ),
+      url("./assets/hello-dog-mobile.png");
+
+    .hello-content {
+      .hello-text {
+        .title {
+          font-size: 44px;
+          margin-bottom: 14px;
+        }
+
+        .copy {
+          font-size: 16px;
+          margin-bottom: 22px;
+        }
+
+        .button-div {
+          button {
+            width: 240px;
+            font-size: 14px;
+            margin-bottom: 10px;
+            padding: 20px;
+          }
+        }
+      }
+    }
+  }
+
   .footer {
     .footer-content {
       .top {
         padding: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .hello {
+    padding: 60px 0 180px;
+    background-image: linear-gradient(
+        to bottom,
+        #ff6f32 45.5%,
+        #ea7033 60.5%,
+        transparent 65.5%
+      ),
+      url("./assets/hello-dog-mobile.png");
+
+    .hello-content {
+      .hello-text {
+        .title {
+          font-size: 36px;
+          margin-bottom: 14px;
+        }
+
+        .copy {
+          font-size: 14px;
+          margin-bottom: 22px;
+        }
+
+        .button-div {
+          button {
+            width: 200px;
+            font-size: 12px;
+            margin-bottom: 10px;
+            padding: 15px 0;
+          }
+        }
       }
     }
   }
@@ -903,6 +1226,17 @@ section {
     .section-header {
       font-size: 38px;
     }
+  }
+
+  .hello {
+    padding: 60px 0 150px;
+    background-image: linear-gradient(
+        to bottom,
+        #ff6f32 48%,
+        #ea7033 63%,
+        transparent 68%
+      ),
+      url("./assets/hello-dog-mobile.png");
   }
 }
 
