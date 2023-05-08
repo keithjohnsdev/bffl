@@ -16,8 +16,9 @@ const BrandContact = () => {
     website: "",
     instagram: "",
     tiktok: "",
+    country: "",
     monthlyBudget: "",
-    isChecked: false,
+    message: "",
   });
 
   const handleChange = (e) => {
@@ -27,25 +28,26 @@ const BrandContact = () => {
     });
   };
 
-  function handleCheck(e) {
-    const value =
-      e.target.type === "checkbox" ? e.target.checked : e.target.value;
-    setFormData((formData) => ({
-      ...formData,
-      [e.target.name]: value,
-    }));
-  }
+  // function handleCheck(e) {
+  //   const value =
+  //     e.target.type === "checkbox" ? e.target.checked : e.target.value;
+  //   setFormData((formData) => ({
+  //     ...formData,
+  //     [e.target.name]: value,
+  //   }));
+  // }
 
   function handleSubmit(e) {
     e.preventDefault();
     console.log(formData);
+    window.open(`mailto:bark@bffl.io?subject=I'm interested in joining BFFL as a brand!&body=Business Name: ${formData.businessName}%0D%0AContact Name: ${formData.contactName}%0D%0A----%0D%0A${formData.message}`)
   }
   return (
     <>
       <NavbarSimple />
       <section className="contact-page" ref={top}>
         <h3 className="section-title">Brand Contact</h3>
-        <form>
+        <form action="mailto:keithjohnsdev@gmail.com">
           <div className="form-row">
             <TextInput
               label="Business Name"
@@ -105,10 +107,12 @@ const BrandContact = () => {
             />
             <CountrySelectInput
               label="Country"
-              placeholder="Select Country"
+              placeholder="United States of America"
               type="select"
               classes="white-bkg"
               onChange={handleChange}
+              value={formData.country}
+              name="country"
             />
             <TextInput
               label="Monthly Budget"
@@ -119,16 +123,17 @@ const BrandContact = () => {
               name="monthlyBudget"
             />
           </div>
-          <div className="form-row">
-            <label className="checkbox">
-              <input
-                type="checkbox"
-                name="isChecked"
-                checked={formData.isChecked}
-                onChange={handleCheck}
-              />
-              I consent to something...
-            </label>
+          <div className="form-row message">
+            <label hmtlfor="message">Message</label>
+            <textarea
+              className="contact-message"
+              placeholder="Enter a reason you want to sign up as a brand..."
+              value={formData.message}
+              onChange={handleChange}
+              name="message"
+              id="message"
+              rows={6}
+            />
           </div>
           <div className="form-row align-right">
             <button className="submit-btn" onClick={handleSubmit}>

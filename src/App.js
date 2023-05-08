@@ -49,7 +49,7 @@ function App() {
         <p className="italic">Social Collaboration Made Easy!</p>
         <div className="hero-buttons">
           <button className="blue-outline-btn" onClick={()=>{navigate("/contact-brands")}}>JOIN AS A BRAND</button>
-          <button className="blue-green-btn">JOIN AS A CREATOR</button>
+          <button className="blue-outline-btn right">JOIN AS A CREATOR</button>
         </div>
       </section>
       <SectionDivider title="HOW IT WORKS" />
@@ -224,7 +224,7 @@ function App() {
               <button className="blue-outline-btn black" onClick={()=>{navigate("/contact-brands")}}>
                 JOIN AS A BRAND
               </button>
-              <button className="solid-btn">JOIN AS A CREATOR</button>
+              <button className="blue-outline-btn black">JOIN AS A CREATOR</button>
             </div>
           </div>
         </div>

@@ -23,16 +23,16 @@ section {
   padding: 22px 52px;
   border-radius: 100px;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   margin-right: 10px;
   white-space: nowrap;
 
   &:hover {
-    background-color: #1b8efa;
-    border-color: #1b8efa;
-    color: white;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.247);
+    background-color: #0081f8;
+    color: #a7ff4f;
+    border: 2px solid #ffffff;
+    box-shadow: 6px 6px 0px #a7ff4f;
   }
 
   &.black {
@@ -41,30 +41,35 @@ section {
     padding: 22px 40px;
 
     &:hover {
-      background-color: rgb(71, 71, 71);
+      background-color: black;
       color: white;
+      box-shadow: none;
     }
   }
-}
 
-.blue-green-btn {
-  background-color: #0081f8;
-  color: #a7ff4f;
-  border: 2px solid #ffffff;
-  border-radius: 100px;
-  padding: 22px 52px;
-  cursor: pointer;
-  font-size: 24px;
-  font-weight: 700;
-  margin-left: 10px;
-  box-shadow: 6px 6px 0px #a7ff4f;
-
-  &:hover {
-    background-color: #1b8efa;
-    transform: translate(2px, 2px);
-    box-shadow: 4px 4px 0px #a7ff4f;
+  &.right {
+    margin-left: 10px;
   }
 }
+
+// .blue-green-btn {
+//   background-color: #0081f8;
+//   color: #a7ff4f;
+//   border: 2px solid #ffffff;
+//   border-radius: 100px;
+//   padding: 22px 52px;
+//   cursor: pointer;
+//   font-size: 24px;
+//   font-weight: 700;
+//   margin-left: 10px;
+//   box-shadow: 6px 6px 0px #a7ff4f;
+
+//   &:hover {
+//     background-color: #1b8efa;
+//     transform: translate(2px, 2px);
+//     box-shadow: 4px 4px 0px #a7ff4f;
+//   }
+// }
 
 .solid-btn {
   background-color: black;
@@ -298,7 +303,7 @@ section {
         flex-direction: column;
         justify-content: center;
 
-        a {
+        p {
           margin-bottom: 5px;
           color: white;
           font-weight: 700;
@@ -539,6 +544,10 @@ section {
 
   .hero {
     padding-top: 90px;
+
+    .italic {
+      margin: 35px 0 10px;
+    }
   }
 
   .how-it-works {
@@ -761,11 +770,11 @@ section {
   }
 
   .hero {
-    padding-top: 90px;
+    padding: 90px 0 100px;
 
     .italic {
       font-size: 20px;
-      margin-top: 55px;
+      margin-bottom: 20px;
     }
 
     .hero-buttons {
@@ -925,7 +934,7 @@ section {
           .links {
             display: flex;
             flex-direction: column;
-            a {
+            p {
               margin-bottom: 5px;
               color: white;
               font-weight: 700;
@@ -1027,6 +1036,10 @@ section {
   }
 
   .hero {
+
+    .italic {
+      margin: 40px 0 15px;
+    }
     .hero-buttons {
       flex-direction: column;
       align-items: center;
@@ -1035,6 +1048,11 @@ section {
       button {
         width: 250px;
         padding: 16px 40px;
+
+        &.right {
+          margin-left: 0;
+          margin-top: 15px;
+        }
       }
     }
   }

@@ -33,33 +33,27 @@ export const Footer = (props) => {
             </div>
             <div className="vr" />
             <div className="links">
-              <a
-                href={() =>
-                  window.open(
-                    "mailto:email@example.com?subject=Subject&body=Body%20goes%20here"
-                  )
+              <p
+                onClick={() =>
+                  window.open("mailto:hello@bffl.io?subject=Hello!")
                 }
               >
                 HELLO@BFFL.IO
-              </a>
-              <a
-                href={() =>
-                  window.open(
-                    "mailto:email@example.com?subject=Subject&body=Body%20goes%20here"
-                  )
+              </p>
+              {/* <p
+                onClick={() =>
+                  window.open("mailto:hello@bffl.io?subject=Hello!")
                 }
               >
                 PRIVACY POLICY
-              </a>
-              <a
-                href={() =>
-                  window.open(
-                    "mailto:email@example.com?subject=Subject&body=Body%20goes%20here"
-                  )
+              </p>
+              <p
+                onClick={() =>
+                  window.open("mailto:hello@bffl.io?subject=Hello!")
                 }
               >
                 TERMS OF SERVICE
-              </a>
+              </p> */}
             </div>
           </div>
           <div className="right">
@@ -163,33 +157,27 @@ export const Footer = (props) => {
             </div>
             <div className="right">
               <div className="links">
-                <a
-                  href={() =>
-                    window.open(
-                      "mailto:email@example.com?subject=Subject&body=Body%20goes%20here"
-                    )
+                <p
+                  onClick={() =>
+                    window.open("mailto:hello@bffl.io?subject=Hello!")
                   }
                 >
                   HELLO@BFFL.IO
-                </a>
-                <a
-                  href={() =>
-                    window.open(
-                      "mailto:email@example.com?subject=Subject&body=Body%20goes%20here"
-                    )
+                </p>
+                {/* <p
+                  onClick={() =>
+                    window.open("mailto:hello@bffl.io?subject=Hello!")
                   }
                 >
                   PRIVACY POLICY
-                </a>
-                <a
-                  href={() =>
-                    window.open(
-                      "mailto:email@example.com?subject=Subject&body=Body%20goes%20here"
-                    )
+                </p>
+                <p
+                  onClick={() =>
+                    window.open("mailto:hello@bffl.io?subject=Hello!")
                   }
                 >
                   TERMS OF SERVICE
-                </a>
+                </p> */}
               </div>
             </div>
           </div>

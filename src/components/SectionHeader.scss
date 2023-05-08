@@ -1,8 +1,8 @@
 .section-header {
   font-family: "Lilita One", cursive;
-  font-size: 120px;
+  font-size: 100px;
   position: relative;
-  height: 260px;
+  height: 250px;
   margin-top: -12px;
 
   .header {
@@ -48,7 +48,7 @@
 
 @media screen and (max-width: 950px) {
   .section-header {
-    font-size: 90px;
+    font-size: 80px;
     height: 190px;
   }
 }

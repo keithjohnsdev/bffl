@@ -36,6 +36,23 @@
       }
     }
 
+    &.message {
+        flex-direction: column;
+        .contact-message {
+            background-color: #0000000D;
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin-top: 4px;
+            font-weight: 700;
+            &::placeholder {
+                color: black;
+                opacity: 0.7;
+                font-weight: normal;
+              }
+        }
+    }
+
+
     .submit-btn {
       background: #0081f8;
       border-radius: 100px;
@@ -58,7 +75,7 @@
 
     &.align-right {
       justify-content: end;
-      margin-top: 6px;
+      margin-top: 24px;
     }
   }
 }
