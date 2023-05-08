@@ -40,7 +40,9 @@ const BrandContact = () => {
   function handleSubmit(e) {
     e.preventDefault();
     console.log(formData);
-    window.open(`mailto:bark@bffl.io?subject=I'm interested in joining BFFL as a brand!&body=Business Name: ${formData.businessName}%0D%0AContact Name: ${formData.contactName}%0D%0A----%0D%0A${formData.message}`)
+    window.open(
+      `mailto:bark@bffl.io?subject=I'm interested in joining BFFL as a brand!&body=Business Name: ${formData.businessName}%0D%0AContact Name: ${formData.contactName}%0D%0AEmail: ${formData.email}%0D%0APhone Number: ${formData.phone}%0D%0AWebsite: ${formData.website}%0D%0AInstagram: ${formData.instagram}%0D%0ATikTok: ${formData.tiktok}%0D%0ACountry: ${formData.country}%0D%0AMonthly Budget: ${formData.monthlyBudget}%0D%0A----%0D%0A${formData.message}`
+    );
   }
   return (
     <>
