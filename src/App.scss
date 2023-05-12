@@ -149,7 +149,9 @@ section {
 .talent {
   text-align: center;
   padding-top: 169px;
-  margin: 0 2.75%;
+  margin: 0;
+  padding-left: 10%;
+  padding-right: 10%;
 
   .section-header {
     font-size: 80px;
@@ -1036,7 +1038,6 @@ section {
   }
 
   .hero {
-
     .italic {
       margin: 40px 0 15px;
     }
@@ -1258,6 +1259,26 @@ section {
   }
 }
 
+@media screen and (min-width: 1650px) {
+  .hello {
+    background-image: linear-gradient(
+        to right,
+        #ff6f32 45%,
+        #ea7033 60%,
+        transparent 65%,
+        transparent 80%,
+        #ea7033 85%,
+        #ff6f32 90%
+      ),
+      url("./assets/hello-dog.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 85% center;
+    // background: linear-gradient(90deg, #ff6f32 51.18%, #f24922);
+    padding: 140px 8%;
+  }
+}
+
 @media screen and (min-width: 1700px) {
   .how-it-works,
   .mission,
@@ -1270,13 +1291,18 @@ section {
 }
 
 @media screen and (min-width: 2000px) {
+
+  .hello {
+    background-position: 80% center;
+  }
+
   .how-it-works,
   .mission,
   .talent,
   .hello,
   .footer {
-    padding-left: 12%;
-    padding-right: 12%;
+    padding-left: 15%;
+    padding-right: 15%;
   }
 }
 
@@ -1286,7 +1312,7 @@ section {
   .talent,
   .hello,
   .footer {
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 20%;
+    padding-right: 20%;
   }
 }
