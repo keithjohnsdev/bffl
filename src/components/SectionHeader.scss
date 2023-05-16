@@ -50,6 +50,18 @@
   .section-header {
     font-size: 80px;
     height: 190px;
+
+    .header {
+      &.white {
+        left: 6px;
+        top: 3px;
+      }
+
+      &.blue {
+        left: 12px;
+        top: 6px;
+      }
+    }
   }
 }
 

@@ -20,15 +20,17 @@ export const Navbar = (props) => {
       <div className="left">
         <p
           className="nav"
-          onClick={()=>{navigate("/contact-brands")}}
+          onClick={() => {
+            navigate("/contact-brands");
+          }}
         >
           FOR BUSINESS
         </p>
         <p
           className="nav"
-          onClick={() =>
-            top.current?.scrollIntoView({ behavior: "smooth" })
-          }
+          onClick={() => {
+            navigate("/contact-creators");
+          }}
         >
           FOR CREATORS
         </p>
@@ -41,21 +43,17 @@ export const Navbar = (props) => {
           HOW IT WORKS
         </p>
       </div>
-        <img
-          className="center-logo"
-          src={require("../../assets/logo-bffl-tag.png")}
-          alt="BFFL dog tag logo"
-          onClick={() =>
-            top.current?.scrollIntoView({ behavior: "smooth" })
-          }
-        />
-        <div className="center"></div>
+      <img
+        className="center-logo"
+        src={require("../../assets/logo-bffl-tag.png")}
+        alt="BFFL dog tag logo"
+        onClick={() => top.current?.scrollIntoView({ behavior: "smooth" })}
+      />
+      <div className="center"></div>
       <div className="right">
         <p
           className="nav"
-          onClick={() =>
-            talent.current?.scrollIntoView({ behavior: "smooth" })
-          }
+          onClick={() => talent.current?.scrollIntoView({ behavior: "smooth" })}
         >
           MEET THE TALENT
         </p>
@@ -113,41 +111,44 @@ export const Navbar = (props) => {
       <div className={showMenu ? "mobile-menu" : "mobile-menu hide"} id="menu">
         <p
           className="nav"
-          onClick={() =>
-            top.current?.scrollIntoView({ behavior: "smooth" })
-          }
+          onClick={() => {
+            navigate("/contact-brands");
+          }}
         >
           FOR BUSINESS
         </p>
         <p
           className="nav"
-          onClick={() =>
-            top.current?.scrollIntoView({ behavior: "smooth" })
-          }
+          onClick={() => {
+            navigate("/contact-creators");
+          }}
         >
           FOR CREATORS
         </p>
         <p
           className="nav"
-          onClick={() =>
-            howItWorks.current?.scrollIntoView({ behavior: "smooth" })
-          }
+          onClick={() => {
+            howItWorks.current?.scrollIntoView({ behavior: "smooth" });
+            setShowMenu(false);
+          }}
         >
           HOW IT WORKS
         </p>
         <p
           className="nav"
-          onClick={() =>
-            talent.current?.scrollIntoView({ behavior: "smooth" })
-          }
+          onClick={() => {
+            talent.current?.scrollIntoView({ behavior: "smooth" });
+            setShowMenu(false);
+          }}
         >
           MEET THE TALENT
         </p>
         <p
           className="nav"
-          onClick={() =>
-            mission.current?.scrollIntoView({ behavior: "smooth" })
-          }
+          onClick={() => {
+            mission.current?.scrollIntoView({ behavior: "smooth" });
+            setShowMenu(false);
+          }}
         >
           OUR MISSION
         </p>

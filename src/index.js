@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import BrandContact from './components/BrandContact';
+import CreatorContact from './components/CreatorContact';
 import reportWebVitals from './reportWebVitals';
 import {
   createHashRouter,
@@ -17,6 +18,10 @@ const router = createHashRouter([
   {
     path: "/contact-brands",
     element: <BrandContact />,
+  },
+  {
+    path: "/contact-creators",
+    element: <CreatorContact />,
   },
 ]);
 

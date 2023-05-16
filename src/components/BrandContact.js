@@ -49,7 +49,7 @@ const BrandContact = () => {
       <NavbarSimple />
       <section className="contact-page" ref={top}>
         <h3 className="section-title">Brand Contact</h3>
-        <form action="mailto:keithjohnsdev@gmail.com">
+        <form>
           <div className="form-row">
             <TextInput
               label="Business Name"
